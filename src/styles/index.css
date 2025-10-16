@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.test-btn button {
+  font-size: 1rem;
+  color: #f0fdfb;
+  background: linear-gradient(135deg, #14b8a3, #2dd4bf);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.test-btn button:hover {
+  font-size: 1rem;
+  color: #f0fdfb;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.r2F2F2F{
+  background: linear-gradient(125deg , #ffffff, #dafffa  );
+ 
+}
