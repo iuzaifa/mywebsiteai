@@ -45,8 +45,8 @@ const HeroSection = () => {
       </p>
 
       {/* Trust Banner */}
-      <div className="lg:flex items-center justify-center mb-5 ">
-        <div className="flex -space-x-3 mr-3 mx-auto">
+      <div className="lg:w-4xl lg:flex items-center justify-center mb-7 w-3xs">
+        <div className="flex -space-x-3 mr-3 justify-center">
           {avatars.map((src, index) => (
             <img
               key={index}
@@ -57,11 +57,9 @@ const HeroSection = () => {
             />
           ))}
         </div>
-        <p className="lg:text-sm text-xs from-neutral-500 text-gray-700">
+        <p className="lg:text-sm text-xs font-semibold text-gray-700">
           We are trusted by{" "}
-          <span className="text-teal-600 from-neutral-500">
-            Fortune 500 Companies
-          </span>
+          <span className="text-teal-600 font-bold">Fortune 500 Companies</span>
         </p>
       </div>
 
