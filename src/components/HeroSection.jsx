@@ -57,7 +57,7 @@ const HeroSection = () => {
             />
           ))}
         </div>
-        <p className="lg:text-sm text-xs font-semibold text-gray-700">
+        <p className="lg:text-sm text-xs font-semibold text-gray-700 lg-py-0 pt-2">
           We are trusted by{" "}
           <span className="text-teal-600 font-bold">Fortune 500 Companies</span>
         </p>

@@ -308,7 +308,7 @@ const Navbar = () => {
     "px-3 py-2 text-xs rounded-lg transition duration-300 shadow-md text-slate-50";
   const linkBaseClasses =
     "relative flex items-center gap-1.5 text-base py-2 transition-all duration-300 tracking-wide";
-  const linkTextClasses = `text-gray-700 dark:text-gray-200 hover:text-teal-600 dark:hover:text-teal-400`;
+  const linkTextClasses = `text-gray-600 dark:text-gray-200 hover:text-teal-600 dark:hover:text-teal-400`;
   const dropdownItemClasses = `flex items-center gap-2 py-2 px-3 text-xs text-gray-700 dark:text-gray-300 hover:bg-teal-600 hover:text-white dark:hover:bg-teal-600 transition-colors duration-150`;
 
   // ... (MegaMenuColumn component definition remains the same) ...
@@ -342,7 +342,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sticky py-1 text-xs top-0 z-50 w-full flex items-center justify-between border-b border-gray-100 dark:border-gray-800 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm transition-colors duration-500">
+      <header className="sticky py-1 text-xs top-0 z-50 w-full flex items-center justify-between backdrop-blur-sm transition-colors duration-500">
         <div className="flex items-center justify-between px-4 sm:px-8 py-2 max-w-7xl mx-auto w-full">
           {/* 1. Logo */}
           <div className="header-logo">
@@ -369,9 +369,6 @@ const Navbar = () => {
                         className="transition-transform duration-200 group-hover:rotate-180"
                       />
                     )}
-                    <span
-                      className={`absolute left-0 bottom-[-5px] h-1 w-0 bg-teal-600 transition-all duration-300 group-hover:w-full`}
-                    ></span>
                   </Link>
 
                   {/* --- DROPDOWN RENDER LOGIC (Desktop) --- */}
