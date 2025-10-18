@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Headline */}
-      <h1 className="lg:text-5xl text-4xl font-extrabold  leading-tight tracking-tighter dark:text-gray-300 text-black/95  mb-6">
+      <h1 className="lg:text-5xl text-4xl lg:px-1 px-2 font-extrabold  leading-tight tracking-tighter dark:text-gray-300 text-black/95  mb-6">
         A
         <span className="relative mx-3">
           <span className="text-teal-600">Creative</span>
@@ -39,32 +39,28 @@ const HeroSection = () => {
       </h1>
 
       {/* Subtitle */}
-      <p className="lg:text-sm text-xs lg:max-w-2xl mx-auto text-gray-600 dark:text-slate-500 mb-5">
+      <p className="lg:text-sm lg:px-1 px-8 text-xs lg:max-w-2xl mx-auto text-gray-600 dark:text-slate-500 mb-5">
         We enhance businesses' ability to boost customer engagement through the
         integration of personalized and interactive elements into their videos.
       </p>
 
       {/* Trust Banner */}
       <div className="lg:w-4xl lg:flex items-center justify-center mb-7 w-3xs">
-        <div>
-          <div className="flex -space-x-3 mr-3 justify-center">
-            {avatars.map((src, index) => (
-              <img
-                key={index}
-                src={src}
-                alt={`Avatar ${index + 1}`}
-                className="lg:w-10 lg:h-10 h-7 w-7 rounded-full border-2 border-white object-cover"
-                style={{ zIndex: avatars.length - index }}
-              />
-            ))}
-          </div>
-          <p className="lg:text-sm text-xs font-semibold text-gray-700">
-            We are trusted by{" "}
-            <span className="text-teal-600 font-bold">
-              Fortune 500 Companies
-            </span>
-          </p>
+        <div className="flex -space-x-3 mr-3 justify-center">
+          {avatars.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Avatar ${index + 1}`}
+              className="lg:w-10 lg:h-10 h-7 w-7 rounded-full border-2 border-white object-cover"
+              style={{ zIndex: avatars.length - index }}
+            />
+          ))}
         </div>
+        <p className="lg:text-sm text-xs font-semibold text-gray-700">
+          We are trusted by{" "}
+          <span className="text-teal-600 font-bold">Fortune 500 Companies</span>
+        </p>
       </div>
 
       {/* CTA Buttons */}
