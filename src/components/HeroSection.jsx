@@ -5,7 +5,7 @@ import { avatars } from "../../src/data"; // Import data
 
 const HeroSection = () => {
   return (
-    <div className="lg:max-w-4xl mx-auto pt-4 lg:pb-16 text-center max-w-2xs">
+    <div className="lg:max-w-4xl mx-auto pt-4 lg:pb-16 text-center">
       {/* Sparkle Banner */}
       <div className="inline-flex items-center justify-center mb-5 px-2 mx-4 py-1 rounded-full shadow-sm lg:text-xs text-xs lg:font-medium text-gray-600 border border-gray-300/90">
         <span className="text-teal-500 lg:mr-2 mr-1">✨</span>
@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Headline */}
-      <h1 className="lg:text-5xl text-2xl font-extrabold  leading-tight tracking-tighter dark:text-gray-300 text-black/95  mb-6">
+      <h1 className="lg:text-5xl text-4xl font-extrabold  leading-tight tracking-tighter dark:text-gray-300 text-black/95  mb-6">
         A
         <span className="relative mx-3">
           <span className="text-teal-600">Creative</span>
@@ -46,21 +46,25 @@ const HeroSection = () => {
 
       {/* Trust Banner */}
       <div className="lg:w-4xl lg:flex items-center justify-center mb-7 w-3xs">
-        <div className="flex -space-x-3 mr-3 justify-center">
-          {avatars.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Avatar ${index + 1}`}
-              className="lg:w-10 lg:h-10 h-7 w-7 rounded-full border-2 border-white object-cover"
-              style={{ zIndex: avatars.length - index }}
-            />
-          ))}
+        <div>
+          <div className="flex -space-x-3 mr-3 justify-center">
+            {avatars.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Avatar ${index + 1}`}
+                className="lg:w-10 lg:h-10 h-7 w-7 rounded-full border-2 border-white object-cover"
+                style={{ zIndex: avatars.length - index }}
+              />
+            ))}
+          </div>
+          <p className="lg:text-sm text-xs font-semibold text-gray-700">
+            We are trusted by{" "}
+            <span className="text-teal-600 font-bold">
+              Fortune 500 Companies
+            </span>
+          </p>
         </div>
-        <p className="lg:text-sm text-xs font-semibold text-gray-700">
-          We are trusted by{" "}
-          <span className="text-teal-600 font-bold">Fortune 500 Companies</span>
-        </p>
       </div>
 
       {/* CTA Buttons */}
@@ -77,5 +81,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
