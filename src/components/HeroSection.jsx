@@ -5,18 +5,20 @@ import { avatars } from "../../src/data"; // Import data
 
 const HeroSection = () => {
   return (
-    <div className="max-w-4xl mx-auto pt- pb-16 text-center">
+    <div className="lg:max-w-4xl mx-auto pt-4 lg:pb-16 text-center max-w-2xs">
       {/* Sparkle Banner */}
-      <div className="inline-flex items-center justify-center mb-5 px-4 py-1 bg-gray-950 rounded-full shadow-sm text-xs font-medium text-gray-700 border border-gray-700">
-        <span className="text-teal-500 mr-2">✨</span>
-        Video Editor and Analytics, Multichannel Publishing — all in one.
+      <div className="inline-flex items-center justify-center mb-5 px-2 mx-4 py-1 rounded-full shadow-sm lg:text-xs text-xs lg:font-medium text-gray-600 border border-gray-300/90">
+        <span className="text-teal-500 lg:mr-2 mr-1">✨</span>
+        <marquee>
+          Video Editor and Analytics, Multichannel Publishing — all in one.
+        </marquee>
       </div>
 
       {/* Main Headline */}
-      <h1 className="text-5xl font-extrabold leading-tight tracking-tighter text-gray-300 mb-6">
+      <h1 className="lg:text-5xl text-2xl font-extrabold  leading-tight tracking-tighter dark:text-gray-300 text-black/95  mb-6">
         A
         <span className="relative mx-3">
-          <span className="text-teal-600">CREATIVE</span>
+          <span className="text-teal-600">Creative</span>
           {/* Underline effect */}
           <svg
             className="absolute bottom-0 left-0 w-full h-1"
@@ -37,27 +39,29 @@ const HeroSection = () => {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-sm max-w-2xl mx-auto text-gray-400 mb-5">
+      <p className="lg:text-sm text-xs lg:max-w-2xl mx-auto text-gray-600 dark:text-slate-500 mb-5">
         We enhance businesses' ability to boost customer engagement through the
         integration of personalized and interactive elements into their videos.
       </p>
 
       {/* Trust Banner */}
-      <div className="flex items-center justify-center mb-5">
-        <div className="flex -space-x-3 mr-3">
+      <div className="lg:flex items-center justify-center mb-5 ">
+        <div className="flex -space-x-3 mr-3 mx-auto">
           {avatars.map((src, index) => (
             <img
               key={index}
               src={src}
               alt={`Avatar ${index + 1}`}
-              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+              className="lg:w-10 lg:h-10 h-7 w-7 rounded-full border-2 border-white object-cover"
               style={{ zIndex: avatars.length - index }}
             />
           ))}
         </div>
-        <p className="text-sm font-semibold text-gray-700">
+        <p className="lg:text-sm text-xs from-neutral-500 text-gray-700">
           We are trusted by{" "}
-          <span className="text-teal-600 font-bold">Fortune 500 Companies</span>
+          <span className="text-teal-600 from-neutral-500">
+            Fortune 500 Companies
+          </span>
         </p>
       </div>
 
@@ -75,3 +79,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+

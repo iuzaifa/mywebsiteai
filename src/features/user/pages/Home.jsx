@@ -9,7 +9,7 @@ import ServiceSection from "../../../components/ServiceSection";
 const Home = () => {
   return (
     <>
-      <div className="min-h-scree bg-black">
+      <div className="min-h-scree dark:bg-black bg-slate-100/90">
         {/* Background Gradient Layer */}
         <div
           className="absolute top-0 right-0 w-full h-full opacity-30 z-0 overflow-hidden"
@@ -23,8 +23,8 @@ const Home = () => {
           <Navbar />
           <HeroSection />
           <LogoSlider />
-          <AboutSection/>
-          <ServiceSection/>
+          <AboutSection />
+          <ServiceSection />
           <Footer />
         </div>
       </div>

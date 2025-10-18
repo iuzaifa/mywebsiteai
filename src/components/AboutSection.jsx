@@ -14,7 +14,7 @@ let abooutData = {
 const AboutSection = () => {
   return (
     // Apply full-width dark background and subtle gradient
-    <section className={`relative py-16 md:py-16 overflow-hidden`}>
+    <section className={`relative py-16 md:py-16 overflow-hidde`}>
       <div className="max-w-7xl mx-auto px-6">
         {/* --- Content Block (Responsive Layout) --- */}
         <div className="lg:max-w-4xl">
@@ -30,13 +30,13 @@ const AboutSection = () => {
           </div>
 
           {/* 2. Title */}
-          <h2 className="text-4xl md:text-4xl font-thin text-white leading-tight mb-2 md:mb-2">
+          <h2 className="text-4xl md:text-4xl font-thin text-slate-800 dark:text-slate-400  leading-tight mb-2 md:mb-2">
             {abooutData.title}
           </h2>
 
           {/* 3. Description & CTA (Side-by-side or stacked on mobile) */}
           <div className="flex flex-col lg:flex-row lg:items-end justify-between">
-            <p className="text-sm text-gray-400 font-light mb-8 lg:mb-0 lg:pr-12 lg:max-w-[70%]">
+            <p className="text-sm text-slate-800 dark:text-slate-400 font-light mb-8 lg:mb-0 lg:pr-12 lg:max-w-[70%]">
               {abooutData.description}
             </p>
           </div>

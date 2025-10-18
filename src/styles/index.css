@@ -10,22 +10,13 @@
   }
 }
 
-.test-btn button {
-  font-size: 1rem;
-  color: #f0fdfb;
-  background: linear-gradient(135deg, #14b8a3, #2dd4bf);
-  padding: 8px;
-  border-radius: 5px;
-}
+/* 
+.nav-withd{
+  width: 300px;
+  border: rebeccapurple 1px solid;
+} */
 
-.test-btn button:hover {
-  font-size: 1rem;
-  color: #f0fdfb;
-  padding: 8px;
-  border-radius: 5px;
-}
 
-.r2F2F2F{
-  background: linear-gradient(125deg , #ffffff, #dafffa  );
- 
+.ddd {
+  width: 700px;
 }

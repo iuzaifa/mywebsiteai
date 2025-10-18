@@ -68,7 +68,7 @@ const ServiceCard = ({
 }) => {
   // Increased hover scale slightly and made the teal shadow more visible
   const CARD_CLASSES =
-    "bg-gray-800/60 p-6 sm:p-8 rounded-xl border border-gray-700/50 flex flex-col h-full transition duration-300 transform hover:scale-[1.03] ";
+    "bg-black/90 p-6 sm:p-8 rounded-xl border border-gray-700/50 flex flex-col h-full transition duration-300 transform hover:scale-[1.03] ";
   const BUTTON_CLASSES =
     "mt-auto w-full py-3 hover:text-slate-100 text-sm rounded-lg text-teal-400 border border-teal-400/50 bg-gray-900/50 hover:bg-teal-500 hover:text-gray-900 transition duration-300";
 
@@ -81,7 +81,7 @@ const ServiceCard = ({
           className="text-teal-400 mb-4 bg-gray-700/50 p-2 rounded-full shadow-lg"
         />
 
-        <h4 className="text-lg font- text-white/90 mb-2 pb-1 text-left border-b border-slate-800">
+        <h4 className="text-lg font- text-white/90 mb-2 pb-1 text-left border-b border-slate-600">
           {title}
         </h4>
         <p className="text-xs sm:text-sm text-slate-400 mb-2 text-left">
@@ -123,12 +123,13 @@ const ServiceSection = () => {
             {/* Centered underline accent */}
             <span className="absolute left-1/2 -translate-x-1/2 bottom-0 h-0.5 w-12 bg-teal-400 rounded-full"></span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-thin text-white leading-tight mt-4">
+          <h2 className="text-3xl sm:text-5xl font-thin text-slate-600 dark:text-slate-400 leading-tight mt-4">
             Transform Your Vision into <br /> Digital Reality
           </h2>
-          <p className="text-sm text-slate-400 mt-3 max-w-3xl mx-auto">
+          <p className="text-sm text-slate-600 dark:text-slate-400 mt-3 max-w-3xl mx-auto">
             From strategic planning to final deployment, we offer end-to-end
-            solutions that  <br />drive real business value.
+            solutions that <br />
+            drive real business value.
           </p>
         </div>
 
