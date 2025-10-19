@@ -171,7 +171,7 @@ const MobileMenu = ({
     const [isOpen, setIsOpen] = useState(false);
 
     // Ensure correct base classes for mobile links
-    const mobileLinkClasses = `w-full text-left px-4 py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 block transition-colors duration-200`;
+    const mobileLinkClasses = `w-full text-left px-4 py-2 text-sm block transition-colors duration-200 mt-3`;
 
     // 1. Simple Links (No Dropdown)
     if (!item.dropdown) {
