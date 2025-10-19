@@ -191,7 +191,7 @@ const MobileMenu = ({
     return (
       <div
         className={`
-        ${mobileLinkClasses} // Use the border bottom here for separation
+        ${mobileLinkClasses}
         ${linkTextClasses.replace(
           "py-2",
           ""
@@ -217,7 +217,7 @@ const MobileMenu = ({
 
         {/* Dropdown Content */}
         {isOpen && (
-          <div className="pt-2 pb-4 space-y-3 bg-gray-50 dark:bg-gray-800/70 -mx-4 px-4 border-t border-gray-200 dark:border-gray-700">
+          <div className="pt-2 pb-4 space-y-3 bg-gray-50 dark:bg-gray-800/70 -mx-4 px-4 lg:border-t border-gray-200 dark:border-gray-700">
             {/* Logic to iterate through simple dropdowns OR mega menu columns */}
             {item.dropdownItems.map((categoryOrItem, i) => {
               // Check if it's a Mega Menu column (has 'items' property)
