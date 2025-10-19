@@ -273,7 +273,7 @@ const MobileMenu = ({
     <div
       className={`
         lg:hidden fixed top-[49px] sm:top-[50px] left-0 w-full h-[calc(100vh-49px)] // Fixed height below header
-        bg-white dark:bg-gray-900 
+        bg-white dark:bg-black/80 
         transition-transform duration-300 ease-in-out z-40
         ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} 
         overflow-y-auto pb-20 
@@ -286,7 +286,7 @@ const MobileMenu = ({
         ))}
 
         {/* --- CTA Buttons (as shown in your image) --- */}
-        <div className="p-4 pt-6 space-y-4 bg-gray-50 dark:bg-gray-800/70">
+        <div className="p-4 pt-6 space-y-4 bg-gray-50 dark:dark:bg-black/80 mx-auto">
           <HeaderCTA />{" "}
           {/* Contains the 'Request a demo' and 'Client Login' buttons */}
         </div>
