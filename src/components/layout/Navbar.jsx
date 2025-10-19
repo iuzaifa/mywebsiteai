@@ -195,7 +195,7 @@ const MobileMenu = ({
         ${linkTextClasses.replace(
           "py-2",
           ""
-        )} // Remove padding from linkTextClasses as mobileLinkClasses sets it
+        )}
       `}
       >
         <button
@@ -203,7 +203,7 @@ const MobileMenu = ({
           className={`
             flex justify-between items-center w-full 
             focus:outline-none 
-            ${linkTextClasses} // Apply color classes here
+            ${linkTextClasses}
           `}
         >
           {item.label}
@@ -217,7 +217,7 @@ const MobileMenu = ({
 
         {/* Dropdown Content */}
         {isOpen && (
-          <div className="pt-2 pb-4 space-y-3 bg-gray-50 dark:bg-gray-800/70 -mx-4 px-4 lg:border-t border-gray-200 dark:border-gray-700">
+          <div className="pt-2 pb-4 space-y-3 bg-gray-50 dark:bg-slate-950/40 -mx-4 px-4 lg:border-t border-gray-200 dark:border-gray-700">
             {/* Logic to iterate through simple dropdowns OR mega menu columns */}
             {item.dropdownItems.map((categoryOrItem, i) => {
               // Check if it's a Mega Menu column (has 'items' property)
@@ -254,7 +254,7 @@ const MobileMenu = ({
                 <Link
                   key={i}
                   to={categoryOrItem.link || "#"}
-                  className="text-sm block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                  className="text-xs block py-1 px-4 text-gray-700  dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                   onClick={toggleMenu}
                 >
                   {categoryOrItem.title}
@@ -286,7 +286,7 @@ const MobileMenu = ({
         ))}
 
         {/* --- CTA Buttons (as shown in your image) --- */}
-        <div className="p-4 pt-6 space-y-4 bg-gray-50 dark:dark:bg-black/80 mx-auto">
+        <div className="p-4 pt-6 space-y-4 bg-white dark:dark:bg-black/80 mx-auto">
           <HeaderCTA />{" "}
           {/* Contains the 'Request a demo' and 'Client Login' buttons */}
         </div>
