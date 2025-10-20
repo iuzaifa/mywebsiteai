@@ -82,13 +82,15 @@ const JobCard = ({ job }) => (
         </p>
       </div>
       {/* Apply Button */}
-      <a
-        href={job.detailLink}
-        className="flex items-center text-teal-600 dark:text-teal-400 font-normal text-sm group transition duration-300"
-      >
-        View Details
-        <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
-      </a>
+      <div className="lg:block hidden">
+        <a
+          href={job.detailLink}
+          className="flex items-center text-teal-600 dark:text-teal-400 font-normal text-sm group transition duration-300"
+        >
+          View Details
+          <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
     </div>
 
     {/* Metadata Pills */}
@@ -132,6 +134,15 @@ const JobCard = ({ job }) => (
           </span>
         )}
       </div>
+    </div>
+    <div className="block lg:hidden py-4 text">
+      <a
+        href={job.detailLink}
+        className="flex -center mx-auto items-center text-teal-600 dark:text-teal-400 font-normal text-sm group transition duration-300"
+      >
+        View Details
+        <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
+      </a>
     </div>
   </div>
 );
