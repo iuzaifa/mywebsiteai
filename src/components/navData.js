@@ -83,7 +83,7 @@ const navdata = [
 
   { label: "Insight", link: "/insight", dropdown: false },
   { label: "Career", link: "/careers", dropdown: false },
-  { label: "Contact", link: "/", dropdown: false },
+  { label: "Contact", link: "/contact", dropdown: false },
 ];
 
 export default navdata;
