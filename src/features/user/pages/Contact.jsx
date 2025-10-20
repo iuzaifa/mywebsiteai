@@ -6,7 +6,24 @@ const Contact = () => {
   return (
     <>
       <section className="w-full px-5">
-        <h3 className="text-black">Drop Your Message Here</h3>
+        <div className="h-80">
+          <img src="public/bg/contact1.jpg" alt="Contact page image" className="h-80" />
+        </div>
+        <div className="p-5">
+          <h2 className="text-5xl font-thin text-black dark:text-slate-300 lg:pb-4">
+            CONTACT US
+          </h2>
+          <h3 className="text-black dark:text-slate-300">
+            Drop Your Message Here
+          </h3>
+          <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-400">
+            Thank you for your interest in XYZ Softwares Services. Please mail
+            us your requirements and your needs to help us serve you better.
+            This information will enable us to route your request to the
+            appropriate person. You should receive a response within 24 working
+            hours.
+          </p>
+        </div>
       </section>
 
       <section className="w-full px-5">
