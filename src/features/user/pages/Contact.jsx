@@ -6,6 +6,10 @@ const Contact = () => {
   return (
     <>
       <section className="w-full px-5">
+        <h3 className="text-black">Drop Your Message Here</h3>
+      </section>
+
+      <section className="w-full px-5">
         <div className="lg:flex justify-center gap-5 items-center">
           <div className="flex flex-col justify-center h-32 w-80 w-md rounded-sm p-5 bg-teal-200/10 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
             <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
