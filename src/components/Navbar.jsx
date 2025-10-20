@@ -183,7 +183,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sticky py-1 text-xs top-0 z-50 w-full flex items-center justify-between backdrop-blur-sm transition-colors duration-500">
+      <header
+        className="sticky py-1 text-xs top-0 z-50 w-full flex items-center justify-between backdrop-blur-sm transition-colors duration-500
+      "
+      >
+        
         <div className="flex items-center justify-between px-4 sm:px-8 py-2 max-w-7xl mx-auto w-full">
           {/* 1. Logo */}
           <div className="header-logo">

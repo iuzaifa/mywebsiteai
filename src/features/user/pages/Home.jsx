@@ -10,7 +10,7 @@ import Navbar from "../../../components/Navbar";
 const Home = () => {
   return (
     <>
-      <div className="min-h-screen dark:bg-black bg-slate-100/90">
+      <div className="min-h-scree dark:bg-black bg-slate-100/90">
         <div
           className="absolute top-0 right-0 w-full h-full opacity-30 z-0 overflow-hidden"
           style={{
