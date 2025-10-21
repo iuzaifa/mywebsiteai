@@ -1,4 +1,12 @@
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import {
+  MessageSquareText,
+  Headset,
+  Mail,
+  MessagesSquare,
+  Phone,
+  MapPin,
+  Send,
+} from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../../../components/Breadcrumb";
@@ -16,8 +24,8 @@ const Contact = () => {
         <Breadcrumb items={breadcrumbPath} />
       </div>
 
-      <section className="max-w-6xl lg:mx-auto  mt-10">
-        <div className="p-5">
+      <section className="max-w-6xl lg:mx-auto  mt-5 bg-white dark:bg-slate-900">
+        <div className="lg:p-10 m-5 py-5">
           <h2 className="border-teal-500 border-b-2 lg:text-5xl text-3xl font-thin text-black text-left dark:text-slate-300 py-2">
             CONTACT US
           </h2>
@@ -34,11 +42,11 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="lg:max-w-6xl mx-auto  dark:bg-slate-950/90 py-32 lg:my-14  lg:p-10  ">
+      <section className="lg:max-w-6xl mx-auto bg-white lg:my-20 my-10  dark:bg-slate-950/90">
         <div className="lg:flex py-8 justify-center max-w-6xl mx-auto px-5 gap-10 lg:py-10 rounded-sm">
           <div className="lg:w-1/2 border lg:p-8 p-4 bg-white dark:bg-slate-950/90 dark:border-slate-600 rounded-md">
             <form action="">
-              <div className="lg:flex gap-2 justify-center items-center my-2">
+              <div className="lg:flex gap-2 justify-center items-center my-1">
                 <div className="w-full pb-2">
                   <label
                     htmlFor=""
@@ -47,7 +55,7 @@ const Contact = () => {
                     First Name <span className="text-red-500">*</span>
                   </label>
                   <input
-                    className="p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30  focus:outline-teal-500/60 text-slate-800"
+                    className="dark:text-slate-300 dark:placeholder-slate-700  p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30  focus:outline-teal-500/60 text-slate-700"
                     type="text"
                     name=""
                     id=""
@@ -62,7 +70,7 @@ const Contact = () => {
                     Last Name <span className="text-red-500">*</span>
                   </label>
                   <input
-                    className="p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
+                    className="p-2 w-full dark:text-slate-300 dark:placeholder-slate-700 rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
                     type="text"
                     name=""
                     id=""
@@ -70,7 +78,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="lg:flex gap-2 justify-center items-center my-2">
+              <div className="lg:flex gap-2 justify-center items-center my-1">
                 <div className="w-full pb-2">
                   <label
                     htmlFor=""
@@ -79,7 +87,7 @@ const Contact = () => {
                     Email <span className="text-red-500">*</span>
                   </label>
                   <input
-                    className="p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
+                    className="p-2 w-full dark:text-slate-300 dark:placeholder-slate-700 rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
                     type="email"
                     name=""
                     id=""
@@ -94,7 +102,7 @@ const Contact = () => {
                     Mobile Number <span className="text-red-500">*</span>
                   </label>
                   <input
-                    className="p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
+                    className="p-2 w-full dark:text-slate-300 dark:placeholder-slate-700 rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
                     type="phone"
                     name=""
                     id=""
@@ -103,17 +111,17 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex gap-2 justify-center items-center my-2">
+              <div className="flex gap-2 justify-center items-center my-1">
                 <div className="w-full pb-2">
                   <label
                     htmlFor=""
-                    className="text-sm text-slate-700 dark:text-slate-400"
+                    className="text-sm dark:text-slate-300 dark:placeholder-slate-700 text-slate-700 dark:text-slate-400"
                   >
                     Company OR Organisation Name
                     <span className="text-red-500">*</span>
                   </label>
                   <input
-                    className="p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
+                    className="p-2 w-full dark:text-slate-300 dark:placeholder-slate-700 rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
                     type="text"
                     name=""
                     id=""
@@ -121,7 +129,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-2 justify-center items-center my-2">
+              <div className="flex gap-2 justify-center items-center my-1">
                 <div className="w-full pb-2">
                   <label
                     htmlFor=""
@@ -133,7 +141,7 @@ const Contact = () => {
                   <select
                     name=""
                     id=""
-                    className="p-2 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-400"
+                    className="p-2 w-full dark:text-slate-300 dark:placeholder-slate-700 rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-400"
                     defaultValue="defaultValue"
                   >
                     <option className="bg-white" value="defaultValue">
@@ -160,7 +168,7 @@ const Contact = () => {
                   </select>
                 </div>
               </div>
-              <div className="flex gap-2 justify-center items-center my-2">
+              <div className="flex gap-2 justify-center items-center my-1">
                 <div className="w-full pb-2">
                   <label
                     htmlFor=""
@@ -173,7 +181,7 @@ const Contact = () => {
                     placeholder="Write your message ? ..."
                     name=""
                     id=""
-                    className="p-2 h-28 w-full rounded-sm text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
+                    className="p-2 h-28 w-full rounded-sm dark:text-slate-300 dark:placeholder-slate-700 text-xs bg-slate-200/50 dark:bg-slate-600/30 focus:outline-teal-500/60 text-slate-800"
                   ></textarea>
                 </div>
               </div>
@@ -190,8 +198,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-         
-         
+
           <div className="lg:w-1/2 w-full ">
             <h3 className="text-5xl font-thin py-5 dark:text-slate-400">
               Location
@@ -211,44 +218,86 @@ const Contact = () => {
             />
           </div>
         </div>
-        
-        
-        
-        <div className="lg:flex justify-center gap-5 items-center m-3">
-          <div className="flex flex-col justify-center lg:w-1/3 w-full  rounded-sm px-5 py-7 bg-white  hover:bg-white/70  border-b-4 my-3 lg:my-10 border border-slate-300 dark:bg-slate-900 dark:border-slate-800">
-            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
-              <Phone size={16} /> Phone{" "}
-            </h3>
-            <Link className="lg:text-sm text-xs text-slate-500 dark:text-slate-400 pb-1">
-              +91 6387869214
-            </Link>
-            <Link className="lg:text-sm text-xs text-slate-500 dark:text-slate-400">
-              +91 9876543210
-            </Link>
-          </div>
+      </section>
 
-          <div className="flex flex-col justify-center lg:w-1/3 w-full rounded-sm px-5 py-7 bg-white  hover:bg-white/70 border-b-4 my-3 lg:my-10 border border-slate-300 dark:bg-slate-900 dark:border-slate-800">
-            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
-              <Mail size={17} /> Email{" "}
-            </h3>
-            <Link className="text-sm text-slate-500 dark:text-slate-400 pb-1">
-              abuhuzaifaw7@gmail.com
-            </Link>
-            <Link className="text-sm text-slate-500 dark:text-slate-400">
-              fazlurrahman345@gmail.com
-            </Link>
-          </div>
+      <section className="items-cente text-center m-2 lg:max-w-7xl mx-auto">
+        <h2 className="text-black/90 text-4xl">Need More Help?</h2>
 
-          <div className="flex flex-col justify-center lg:w-1/3 w-full rounded-sm px-5 py-7 bg-white  hover:bg-white/70 border-b-4 my-3 lg:my-10 border border-slate-300 dark:bg-slate-900 dark:border-slate-800">
-            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
-              <MapPin size={16} /> Hours{" "}
-            </h3>
-            <p className="text-sm text-slate-500 dark:text-slate-400 pb-1">
-              Mon – Fri …… 11 am – 8 pm, Sat, Sun …… 6 am – 8 pm
-            </p>
+        <div className="lg:flex items-center lg:gap-x-6 lg:gap-y-6 flex-wrap justify-center lg:m-5 m-2 lg:p-5 p-2 ">
+          <div className="bg-white dark:bg-slate-900/50  gap-3 lg:w-1/3 lg:mb-0 mb-3 flex items-center p-5">
+            <div className="size-28 items-center text-teal-500 text-center flex justify-center bg-slate-50 dark:bg-slate-800/50 rounded-md">
+              <MessageSquareText size={30} />
+            </div>
+
+            <div className="text-left">
+              <h5 className="font-semibold text-black/90 dark:text-slate-300 text-sm">
+                Text us at 309-650-8582
+              </h5>
+              <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-500">
+                Message and data rates may apply
+              </p>
+              <Link className="text-xs border-b border-black/90" to={"#"}>
+                Text US
+              </Link>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-slate-900/50 gap-3 lg:w-1/3 lg:mb-0 mb-3 flex items-center p-5 ">
+            <div className="size-28 items-center text-teal-500 text-center flex justify-center bg-slate-50 dark:bg-slate-800/50 rounded-md">
+              <MessagesSquare size={30} />
+            </div>
+
+            <div className="text-left">
+              <h5 className="font-semibold text-black/90 text-sm dark:text-slate-300">
+                Chat with a specialist
+              </h5>
+              <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-500">
+                Available 10am-12pm IST, 7 days a week
+              </p>
+              <Link className="text-xs border-b border-black/90" to={"#"}>
+                Chat now
+              </Link>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-slate-900/50 gap-3 lg:w-1/3 lg:mb-0 mb-3 flex items-center p-5 ">
+            <div className="size-28 items-center text-teal-500 text-center flex justify-center bg-slate-50 dark:bg-slate-800/50 rounded-md">
+              <Headset size={30} />
+            </div>
+
+            <div className="text-left">
+              <h5 className="font-semibold text-black/90 text-sm dark:text-slate-300">
+                Call us at 1-866-983-8582
+              </h5>
+              <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-500">
+                Available 10am-12pm IST, 7 days a week
+              </p>
+              <Link className="text-xs border-b border-black/90" to={"#"}>
+                Call us
+              </Link>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-slate-900/50 gap-3 lg:w-1/3 lg:mb-0 mb-3 flex items-center p-5 ">
+            <div className="size-28 items-center text-teal-500 text-center flex justify-center bg-slate-50 dark:bg-slate-800/50 rounded-md">
+              <Mail size={30} />
+            </div>
+
+            <div className="text-left">
+              <h5 className="font-semibold text-black/90 text-sm dark:text-slate-300">
+                Send us an email
+              </h5>
+              <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-500">
+                We'd love to hear from you!
+              </p>
+              <Link className="text-xs border-b border-black/90" to={"#"}>
+                Email us
+              </Link>
+            </div>
           </div>
         </div>
       </section>
+
+      <div className="text-center py-20">
+        <p className="text-xs text-slate-400"> Thanks 🥰❤️</p>
+      </div>
     </>
   );
 };
