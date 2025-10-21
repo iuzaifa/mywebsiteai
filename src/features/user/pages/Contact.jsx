@@ -1,25 +1,61 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import Breadcrumb from "../../../components/Breadcrumb";
+
+
+ const breadcrumbPath = [
+   { name: "Home", path: "/" },
+   { name: "Contact us", path: "/contact" },
+ ];
 
 const Contact = () => {
   return (
     <>
-      <section
-        className="max-w-6xl lg:mx-auto  "
-        style={{ background: "public/bg/contact1.jpg" }}
-      >
-        <div className=" p-4">
-          <img
-            // src="public/bg/contact1.jpg"
-            src="https://plus.unsplash.com/premium_photo-1661757425320-2bf2032fd991?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
-            alt="Contact page image"
-            className="w-full border-teal-500 border"
-          />
-        </div>
+      {/* <Breadcrumb /> */}
+      <div className="pb-4">
+        <Breadcrumb items={breadcrumbPath} />
+      </div>
+      <section className="max-w-6xl mx-auto px-5">
+        <div className="lg:flex justify-center gap-5 items-center">
+          <div className="flex flex-col justify-center lg:w-1/3 w-full  rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30  border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
+            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
+              <Phone size={16} /> Phone{" "}
+            </h3>
+            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400 pb-1">
+              +91 6387869214
+            </Link>
+            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400">
+              +91 9876543210
+            </Link>
+          </div>
 
+          <div className="flex flex-col justify-center lg:w-1/3 w-full rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
+            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
+              <Mail size={17} /> Email{" "}
+            </h3>
+            <Link className="text-sm text-teal-700 dark:text-slate-400 pb-1">
+              abuhuzaifaw7@gmail.com
+            </Link>
+            <Link className="text-sm text-teal-700 dark:text-slate-400">
+              fazlurrahman345@gmail.com
+            </Link>
+          </div>
+
+          <div className="flex flex-col justify-center lg:w-1/3 w-full rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
+            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
+              <MapPin size={16} /> Hours{" "}
+            </h3>
+            <p className="text-sm text-teal-700 dark:text-slate-400 pb-1">
+              Mon – Fri …… 11 am – 8 pm, Sat, Sun …… 6 am – 8 pm
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-6xl lg:mx-auto  mt-10">
         <div className="p-5">
-          <h2 className="border-teal-500 border-b-2 text-5xl font-thin text-black text-left dark:text-slate-300 py-2">
+          <h2 className="border-teal-500 border-b-2 lg:text-5xl text-3xl font-thin text-black text-left dark:text-slate-300 py-2">
             CONTACT US
           </h2>
           <h3 className="text-black dark:text-slate-300 lg:pt-6 pt-3 text-left">
@@ -36,7 +72,7 @@ const Contact = () => {
       </section>
 
       <section className="lg:flex justify-center max-w-6xl mx-auto px-5 gap-4 lg:py-10">
-        <div className="w-1/2  p-4">
+        <div className="lg:w-1/2 w-full  p-4">
           <h3 className="text-5xl font-thin py-5">Location </h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83922907926!2d77.06889943342536!3d28.5272803436318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2e972e8a0b1%3A0xbcd6ea6f5c63e2e7!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1692269836550!5m2!1sen!2sin"
@@ -156,43 +192,6 @@ const Contact = () => {
               </div>
             </div>
           </form>
-        </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto px-5">
-        <div className="lg:flex justify-center gap-5 items-center">
-          <div className="flex flex-col justify-center lg:w-1/3 w-full  rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30  border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
-            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
-              <Phone size={16} /> Phone{" "}
-            </h3>
-            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400 pb-1">
-              +91 6387869214
-            </Link>
-            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400">
-              +91 9876543210
-            </Link>
-          </div>
-
-          <div className="flex flex-col justify-center lg:w-1/3 w-full rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
-            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
-              <Mail size={17} /> Email{" "}
-            </h3>
-            <Link className="text-sm text-teal-700 dark:text-slate-400 pb-1">
-              abuhuzaifaw7@gmail.com
-            </Link>
-            <Link className="text-sm text-teal-700 dark:text-slate-400">
-              fazlurrahman345@gmail.com
-            </Link>
-          </div>
-
-          <div className="flex flex-col justify-center lg:w-1/3 w-full rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
-            <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
-              <MapPin size={16} /> Hours{" "}
-            </h3>
-            <p className="text-sm text-teal-700 dark:text-slate-400 pb-1">
-              Mon – Fri …… 11 am – 8 pm, Sat, Sun …… 6 am – 8 pm
-            </p>
-          </div>
         </div>
       </section>
     </>
