@@ -74,10 +74,10 @@ const Breadcrumb = ({ items }) => {
       <section className="mx-auto max-w-7xl relative ">
         <div className="h-2/3">
           <img
-            src="public/bg/contact1.jpg"
+            src="https://img.freepik.com/free-photo/portrait-asian-girl-works-cafe-uses-laptop-sits-outdoors-street-digital-nomad_1258-189137.jpg?t=st=1761054821~exp=1761058421~hmac=d7edef35051a989d9466dcce98d31702b3d584bf3b7534e6bd5c3683058aad28&w=2000"
             // src="https://plus.unsplash.com/premium_photo-1661757425320-2bf2032fd991?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
             alt="Contact page image"
-            className="h-60 w-full"
+            className="lg:h-80 h-60 w-full"
           />
         </div>
 
