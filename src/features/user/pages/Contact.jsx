@@ -5,18 +5,26 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      <section className="w-full px-5">
-        <div className="h-80">
-          <img src="public/bg/contact1.jpg" alt="Contact page image" className="h-80" />
+      <section
+        className="max-w-6xl lg:mx-auto  "
+        style={{ background: "public/bg/contact1.jpg" }}
+      >
+        <div className=" p-4">
+          <img
+            src="public/bg/contact1.jpg"
+            alt="Contact page image"
+            className="w-full border-teal-500 border"
+          />
         </div>
+
         <div className="p-5">
-          <h2 className="text-5xl font-thin text-black dark:text-slate-300 lg:pb-4">
+          <h2 className="text-5xl font-thin text-black text-left dark:text-slate-300 py-6">
             CONTACT US
           </h2>
-          <h3 className="text-black dark:text-slate-300">
+          <h3 className="text-black dark:text-slate-300 py-2 text-left">
             Drop Your Message Here
           </h3>
-          <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-400">
+          <p className="lg:text-sm text-xs text-slate-700 dark:text-slate-400 text-left">
             Thank you for your interest in XYZ Softwares Services. Please mail
             us your requirements and your needs to help us serve you better.
             This information will enable us to route your request to the
@@ -25,22 +33,21 @@ const Contact = () => {
           </p>
         </div>
       </section>
-
-      <section className="w-full px-5">
+      <section className="max-w-6xl mx-auto px-5">
         <div className="lg:flex justify-center gap-5 items-center">
-          <div className="flex flex-col justify-center h-32 w-80 w-md rounded-sm p-5 bg-teal-200/10 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
+          <div className="flex flex-col justify-center w-96 w-md rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30  border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
             <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
               <Phone size={16} /> Phone{" "}
             </h3>
-            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400 py-1">
+            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400 pb-1">
               +91 6387869214
             </Link>
-            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400 py-1">
+            <Link className="lg:text-sm text-xs text-teal-700 dark:text-slate-400">
               +91 9876543210
             </Link>
           </div>
 
-          <div className="flex flex-col justify-center h-32 w-80 w-md rounded-sm p-5 bg-teal-200/10 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
+          <div className="flex flex-col justify-center w-96 rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
             <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
               <Mail size={17} /> Email{" "}
             </h3>
@@ -52,7 +59,7 @@ const Contact = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col justify-center h-32 w-80 rounded-sm p-5 bg-teal-200/10 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
+          <div className="flex flex-col justify-center w-96 rounded-sm px-5 py-7 bg-teal-200/10 hover:bg-teal-200/30 border-b-4 my-3 lg:my-10 border border-teal-500 dark:bg-slate-900 dark:border-slate-800">
             <h3 className="pb-3 flex items-center gap-3 text-xl  font-semibold text-teal-500">
               <MapPin size={16} /> Hours{" "}
             </h3>
@@ -62,8 +69,12 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+
+      <section></section>
     </>
   );
 };
 
 export default Contact;
+
