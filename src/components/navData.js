@@ -70,10 +70,10 @@ const navdata = [
 
   {
     label: "Products",
-    link: "/products",
+    link: "/product",
     dropdown: true,
     dropdownItems: [
-      { title: "GST Billing Software 1", link: "/products/gst-billing-1" },
+      { title: "GST Billing Software", link: "/gst-billing-product-page" },
       { title: "GST Billing Software 3", link: "/products/gst-billing-3" },
       { title: "Software Development", link: "/products/software-development" },
       { title: "GST Billing Software", link: "/products/gst-billing" },

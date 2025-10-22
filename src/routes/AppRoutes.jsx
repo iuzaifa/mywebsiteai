@@ -46,6 +46,8 @@ import OurTeam from "../features/user/pages/OurTeam";
 import OurWorks from "../features/user/pages/OurWorks";
 import Technologies from "../features/user/pages/Technologies";
 import Insight from "../features/user/pages/Insight";
+import ProductsPage from "../features/user/pages/ProductsPage";
+import GSTBillingProductPage from "../features/user/pages/products/GSTBillingProductPage";
 
 const AppRoutes = () => {
   return (
@@ -62,7 +64,8 @@ const AppRoutes = () => {
           <Route path="ourworks" element={<OurWorks />} />
           <Route path="technologies" element={<Technologies />} />
           <Route path="insight" element={<Insight />} />
-          <Route path="product" element={<Products />} />
+          <Route path="product" element={<ProductsPage />} />
+          <Route path="gst-billing-product-page" element={<GSTBillingProductPage />} />
           <Route path="service" element={<Services />} />
           <Route path="careers" element={<Careers />} />
         </Route>
