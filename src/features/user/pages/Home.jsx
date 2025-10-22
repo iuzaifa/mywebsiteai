@@ -1,11 +1,9 @@
 import React from "react";
 
-import HeroSection from "../../../components/HeroSection";
-import LogoSlider from "../../../components/LogoSlider";
-import Footer from "../../../components/Footer";
 import AboutSection from "../../../components/AboutSection";
 import ServiceSection from "../../../components/ServiceSection";
-import Navbar from "../../../components/Navbar";
+import ModernHero from "../../../components/ModernHero";
+import CompaniesTrustUs from "../../../components/CompaniesTrustUs";
 
 const Home = () => {
   return (
@@ -19,9 +17,10 @@ const Home = () => {
           }}
         ></div>
         {/* Main Content (z-10 to sit above the background) */}
-        <div className="relative z-10">
-          <HeroSection />
-          <LogoSlider />
+        <div className="relative z-10 ">
+          {/* <HeroSection /> */}
+          <ModernHero/>
+          <CompaniesTrustUs/>
           <AboutSection />
           <ServiceSection />
         </div>

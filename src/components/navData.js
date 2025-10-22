@@ -16,7 +16,7 @@ const navdata = [
 
   {
     label: "Services",
-    link: "/services",
+    link: "/services-page",
     dropdown: true,
     dropdownItems: [
       {
