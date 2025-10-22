@@ -23,9 +23,9 @@ const About = () => {
         <WhoWeAre />
       </section>
 
-      <section className="mb-12  my-10">
+      {/* <section className="mb-12  my-10">
         <CallToAction />
-      </section>
+      </section> */}
 
       <section>
           <TestimonialSection/>

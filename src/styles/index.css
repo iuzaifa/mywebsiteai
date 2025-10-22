@@ -10,3 +10,46 @@
   }
 }
 
+.slick-dots li button:before {
+  font-size: 12px;
+  opacity: 1;
+  color: #11d4d4!important;
+  font-size : 10px!important
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3b82f6;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #3b82f6;
+  font-size: 24px;
+}
+.line-clamp-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #11d4d4!important;
+  font-size: 32px!important;
+}
+
+@media (max-width: 768px) {
+  .slick-prev:before, .slick-next:before {
+    font-size: 18px !important; /* smaller arrow size */
+  }
+  .slick-next {
+    right: 10rem!important;
+}
+}
+.slick-next {
+    right: 0rem!important;
+}
+.slick-prev {
+  left: -10px!important;
+  z-index: 1000;
+
+}

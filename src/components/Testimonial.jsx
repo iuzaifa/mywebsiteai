@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Quote, MessageSquareText } from "lucide-react";
+
 
 const data = [
   {
@@ -81,11 +83,11 @@ const Testimonial = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     speed: 800,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000000,
     pauseOnHover: true,
     cssEase: "ease-in-out",
     responsive: [
@@ -108,14 +110,13 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="w-full py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="w-full py-16 bg-gray-200/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="lg:text-sm text-xs text-gray-600 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our clients have to say
             about their experience working with us.
           </p>
@@ -125,58 +126,49 @@ const Testimonial = () => {
         <div className="relative">
           <Slider {...settings}>
             {data.map((testimonial, index) => (
-              <div key={index} className="px-3 focus:outline-none">
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 h-full flex flex-col border border-gray-100">
+              <div key={index} className="px-3 focus:outline-none hover:cursor-pointer">
+                <div className="bg-white py-8 px-10 rounded-md transition-all duration-300 h-full lg:flex flex-col border border-teal-300">
                   {/* Rating */}
                   <StarRating rating={testimonial.rating} />
 
                   {/* Review Text */}
                   <blockquote className="flex-1">
-                    <p className="text-gray-700 text-lg leading-relaxed mb-6 line-clamp-5">
-                      "{testimonial.review}"
+                    <p className="text-gray-600 lg:text-sm text-xs leading-relaxed mb-3 line-clamp-5">
+                      {testimonial.review}
                     </p>
                   </blockquote>
 
                   {/* Client Info */}
-                  <div className="border-t border-gray-100 pt-6 mt-auto">
-                    <div className="flex items-center justify-between">
+                  <div className="border-t border-dashed border-gray-300 mt-auto">
+                    <div className="flex items-center justify-between pt-3">
                       <div className="flex items-center space-x-4">
                         <div className="relative">
                           <img
                             src={testimonial.imagesrc}
                             alt={testimonial.alt}
-                            className="rounded-full h-14 w-14 object-cover border-2 border-blue-500 shadow-sm"
+                            className="rounded-full h-12 w-12 object-cover border-2 border-teal-500 shadow-sm"
                           />
-                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                            <svg
-                              className="w-3 h-3 text-white"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H6z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
+                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center">
+                            <MessageSquareText className="h-3 w-3 text-white" />
                           </div>
                         </div>
-                        <div>
-                          <h4 className="font-semibold text-gray-900 text-lg">
+                        <div className="">
+                          <h4 className="font-semibold text-gray-900 text-sm">
                             {testimonial.name}
                           </h4>
-                          <p className="text-gray-500 text-sm">
+                          <p className="text-gray-500 text-xs">
                             {testimonial.position}
                           </p>
-                          <span className="inline-block px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full mt-1">
+                          <span className="inline-block px-2 py-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full mt-1">
                             {testimonial.clientBusiness}
                           </span>
                         </div>
                       </div>
+
                       <img
                         src={testimonial.logosrc}
                         alt="company logo"
-                        className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                        className="h-8 w-auto object-contain hover:opacity-100 grayscale hover:grayscale-0 cursor-pointer "
                       />
                     </div>
                   </div>
@@ -187,48 +179,25 @@ const Testimonial = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bold text-blue-600">98%</div>
+            <div className="text-3xl font-bold text-teal-600">98%</div>
             <div className="text-gray-600 mt-2">Client Satisfaction</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600">250+</div>
+            <div className="text-3xl font-bold text-teal-600">250+</div>
             <div className="text-gray-600 mt-2">Projects Completed</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600">5+</div>
+            <div className="text-3xl font-bold text-teal-600">5+</div>
             <div className="text-gray-600 mt-2">Years Experience</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue-600">50+</div>
+            <div className="text-3xl font-bold text-teal-600">50+</div>
             <div className="text-gray-600 mt-2">Happy Clients</div>
           </div>
-        </div>
+        </div> */}
       </div>
-
-      {/* Custom CSS for Slick Carousel */}
-      <style jsx>{`
-        .slick-dots li button:before {
-          font-size: 12px;
-          color: #d1d5db;
-          opacity: 1;
-        }
-        .slick-dots li.slick-active button:before {
-          color: #3b82f6;
-        }
-        .slick-prev:before,
-        .slick-next:before {
-          color: #3b82f6;
-          font-size: 24px;
-        }
-        .line-clamp-5 {
-          display: -webkit-box;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
     </section>
   );
 };
