@@ -3,6 +3,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import WhoWeAre from "../../../components/WhoWeAre";
 import CallToAction from "../../../components/CallToAction";
 import TestimonialSection from "../../../components/Testimonial";
+import FAQSection from "../../../components/FAQSection.jsx";
 
 
 
@@ -19,16 +20,19 @@ const About = () => {
         <Breadcrumb items={breadcrumbPath} />
       </section>
 
-      <section className=" xl:mt-32 lg:py-20 bg-white">
+      <section className="lg:py-20 py-10 bg-white">
         <WhoWeAre />
       </section>
 
-      {/* <section className="mb-12  my-10">
+      <section className="py-1 ">
+        <TestimonialSection />
+      </section>
+      {/* <section className="py-1">
         <CallToAction />
       </section> */}
 
       <section>
-          <TestimonialSection/>
+        <FAQSection/>
       </section>
     </>
   );

@@ -74,69 +74,38 @@ const StarRating = ({ rating }) => {
 };
 
 const Testimonial = () => {
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   speed: 800,
-  //   autoplaySpeed: 3000000,
-  //   pauseOnHover: true,
-  //   cssEase: "ease-in-out",
-  //   responsive: [
-  //     {
-  //       breakpoint: 1280,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         dots: true,
-  //       },
-  //     },
-  //   ],
-  // };
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
-    slidesToShow: 2, // default for desktop
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     speed: 800,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3000000,
     pauseOnHover: true,
     cssEase: "ease-in-out",
-    centerMode: false,
-    variableWidth: false,
     responsive: [
       {
-        breakpoint: 1024, // tablets
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // small mobile
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, // SHOW ONLY ONE CARD
+          slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-          centerMode: false,
-          variableWidth: false,
         },
       },
     ],
   };
+ 
 
   return (
-    <section className="w-full py-16 bg-gray-200/20">
+    <section className="w-full py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
@@ -156,16 +125,12 @@ const Testimonial = () => {
                 key={index}
                 className="px-3 focus:outline-none hover:cursor-pointer"
               >
-                <div className="bg-white py-8 px-10 rounded-md transition-all duration-300 h-full lg:flex flex-col border border-teal-300">
-                  {/* Rating */}
-
-                  {/* Review Text */}
+                <div className="bg-white py-8 px-10 rounded-md transition-all duration-300 h-full w-full border border-teal-300">
                   <blockquote className="flex-1">
                     <p className="text-gray-600  text-xs leading-relaxed mb-3 line-clamp-5">
                       {testimonial.review}
                     </p>
                   </blockquote>
-                  {/* Client Info */}
                   <div className="border-t border-dashed border-gray-300 mt-auto">
                     <div className="flex items-center justify-between pt-3">
                       <div className="flex items-center space-x-4">
@@ -202,26 +167,6 @@ const Testimonial = () => {
             ))}
           </Slider>
         </div>
-
-        {/* Stats Section */}
-        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div className="text-3xl font-bold text-teal-600">98%</div>
-            <div className="text-gray-600 mt-2">Client Satisfaction</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-teal-600">250+</div>
-            <div className="text-gray-600 mt-2">Projects Completed</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-teal-600">5+</div>
-            <div className="text-gray-600 mt-2">Years Experience</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-teal-600">50+</div>
-            <div className="text-gray-600 mt-2">Happy Clients</div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

@@ -8,8 +8,8 @@ const navdata = [
     dropdown: true,
     dropdownItems: [
       { title: "About Us", link: "/about" },
-      { title: "Our Works", link: "/our-works" },
-      { title: "Our Team", link: "/our-team" },
+      { title: "Our Works", link: "/ourworks" },
+      { title: "Our Team", link: "/ourteam" },
       { title: "Technologies", link: "/technologies" },
     ],
   },

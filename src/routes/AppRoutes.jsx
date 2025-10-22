@@ -42,6 +42,9 @@ import Products from "../features/user/pages/Products";
 import Services from "../features/user/pages/Services";
 import Careers from "../features/user/pages/Careers";
 import WebLayout from "../components/layout/WebLayout";
+import OurTeam from "../features/user/pages/OurTeam";
+import OurWorks from "../features/user/pages/OurWorks";
+import Technologies from "../features/user/pages/Technologies";
 
 const AppRoutes = () => {
   return (
@@ -54,6 +57,9 @@ const AppRoutes = () => {
           <Route path="home" element={<Home />} /> {/* /home */}
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="ourteam" element={<OurTeam />} />
+          <Route path="ourworks" element={<OurWorks />} />
+          <Route path="technologies" element={<Technologies />} />
           <Route path="product" element={<Products />} />
           <Route path="service" element={<Services />} />
           <Route path="careers" element={<Careers />} />
