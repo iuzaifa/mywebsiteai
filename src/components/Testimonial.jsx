@@ -2,8 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Quote, MessageSquareText } from "lucide-react";
-
+import { Star, MessageSquareText } from "lucide-react";
 
 const data = [
   {
@@ -26,7 +25,6 @@ const data = [
       "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
     review:
       "The attention to detail and creative approach brought our vision to life. Our website traffic increased by 200% within the first month!",
-    clientBusiness: "E-commerce",
     logosrc:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
     alt: "client image",
@@ -39,7 +37,6 @@ const data = [
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
     review:
       "Outstanding service from start to finish. The team was professional, responsive, and delivered high-quality work on time and within budget.",
-    clientBusiness: "SaaS",
     logosrc:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
     alt: "client image",
@@ -52,11 +49,10 @@ const data = [
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
     review:
       "They transformed our digital presence completely. The results speak for themselves - we've seen a 150% increase in customer engagement.",
-    clientBusiness: "Healthcare",
     logosrc:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png",
     alt: "client image",
-    rating: 5,
+    rating: 4,
   },
 ];
 
@@ -64,46 +60,76 @@ const StarRating = ({ rating }) => {
   return (
     <div className="flex gap-1 mb-3">
       {[...Array(5)].map((_, index) => (
-        <svg
+        <Star
           key={index}
-          className={`w-4 h-4 ${
+          className={`w-3 h-3 ${
             index < rating ? "text-yellow-400" : "text-gray-300"
           }`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
+          strokeWidth={0}
+          fill={index < rating ? "#eab308 " : "none"}
+        />
       ))}
     </div>
   );
 };
 
 const Testimonial = () => {
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 800,
+  //   autoplaySpeed: 3000000,
+  //   pauseOnHover: true,
+  //   cssEase: "ease-in-out",
+  //   responsive: [
+  //     {
+  //       breakpoint: 1280,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         dots: true,
+  //       },
+  //     },
+  //   ],
+  // };
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 2, // default for desktop
     slidesToScroll: 1,
     autoplay: true,
     speed: 800,
-    autoplaySpeed: 3000000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     cssEase: "ease-in-out",
+    centerMode: false,
+    variableWidth: false,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1024, // tablets
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 768, // small mobile
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // SHOW ONLY ONE CARD
           slidesToScroll: 1,
           dots: true,
+          centerMode: false,
+          variableWidth: false,
         },
       },
     ],
@@ -126,18 +152,19 @@ const Testimonial = () => {
         <div className="relative">
           <Slider {...settings}>
             {data.map((testimonial, index) => (
-              <div key={index} className="px-3 focus:outline-none hover:cursor-pointer">
+              <div
+                key={index}
+                className="px-3 focus:outline-none hover:cursor-pointer"
+              >
                 <div className="bg-white py-8 px-10 rounded-md transition-all duration-300 h-full lg:flex flex-col border border-teal-300">
                   {/* Rating */}
-                  <StarRating rating={testimonial.rating} />
 
                   {/* Review Text */}
                   <blockquote className="flex-1">
-                    <p className="text-gray-600 lg:text-sm text-xs leading-relaxed mb-3 line-clamp-5">
+                    <p className="text-gray-600  text-xs leading-relaxed mb-3 line-clamp-5">
                       {testimonial.review}
                     </p>
                   </blockquote>
-
                   {/* Client Info */}
                   <div className="border-t border-dashed border-gray-300 mt-auto">
                     <div className="flex items-center justify-between pt-3">
@@ -159,9 +186,7 @@ const Testimonial = () => {
                           <p className="text-gray-500 text-xs">
                             {testimonial.position}
                           </p>
-                          <span className="inline-block px-2 py-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full mt-1">
-                            {testimonial.clientBusiness}
-                          </span>
+                          <StarRating rating={testimonial.rating} />
                         </div>
                       </div>
 
