@@ -215,24 +215,24 @@ const ModernHero = () => {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-20 lg:items-center">
           {/* Text Content Column */}
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="text-3xl font-bold dark:text-slate-300 tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Build your next idea{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 effortlessly
               </span>
             </h1>
 
-            <p className="mt-6 max-w-2xl mx-auto lg:mx-0 text-lg text-gray-600">
+            <p className="mt-6 max-w-2xl mx-auto lg:mx-0 lg:text-lg text-sm text-gray-600 dark:text-slate-400">
               The fastest way to build and deploy your next project with our
               expertly crafted components and templates.
             </p>
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition-colors">
+              <button className="dark:bg-gray-500/30 px-8 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition-colors">
                 Get Started
               </button>
-              <button className="px-8 py-3 border border-gray-300 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+              <button className="dark:text-slate-300 hover:bg-slate-500/30 px-8 py-3 border border-gray-300 font-medium rounded-lg hover:bg-gray-50 transition-colors">
                 Live Demo
               </button>
             </div>
