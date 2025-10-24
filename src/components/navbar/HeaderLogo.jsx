@@ -6,9 +6,9 @@ const HeaderLogo = () => {
       {/* <img src="bg/logo.jpg" className="h-10 w-full pb-0 mb-0" alt="" /> */}
 
       {/* <div className="px-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"> */}
-      <div className="px-2 ">
-        <h2 className="text-3xl  italic font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 px-2">
-          {/* <h2 className="text-3xl italic tracking-tight text-white"> */}
+      <div className="px-2 border-2 border-gradient-to-r from-border-blue-600 to-border-teal-600">
+        {/* <h2 className="text-3xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 px-2"> */}
+        <h2 className="text-2xl py-1 font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600  ">
           asianarcs
         </h2>
       </div>
