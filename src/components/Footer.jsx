@@ -410,10 +410,10 @@ const Footer = () => {
             {/* Logo & Mission */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="px-2 bg-gradient-to-r from-blue-600 to-teal-600 border-2 border-white ">
+                <div className="px bg-gradient-to-r from-blue-600 to-teal-600 border-2 border-teal-200 ">
                   {/* <h2 className="text-3xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 px-2"> */}
                   {/* <h2 className="text-2xl py-1 font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600  "> */}
-                  <h2 className="text-white text-2xl">asianarcs</h2>
+                  <h2 className="text-white text-2xl px-2">asianarcs</h2>
                 </div>
               </div>
 

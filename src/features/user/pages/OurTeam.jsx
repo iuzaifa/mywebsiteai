@@ -5,26 +5,26 @@ const OurTeam = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Jitu Chauhan",
+      name: "Abu Huzaifa",
       role: "Co-Founder & CEO",
       image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+        "https://pbs.twimg.com/profile_images/1971816451423322112/Su_xzi7L_400x400.jpg",
       bio: "Leading vision and strategy with 10+ years in tech entrepreneurship.",
       social: {
-        linkedin: "#",
-        twitter: "#",
-        github: "#",
+        linkedin: "https://www.linkedin.com/in/iiuzaifa",
+        twitter: "https://github.com/iuzaifa",
+        github: "https://x.com/iiuzaifa",
       },
     },
     {
       id: 2,
-      name: "Anita Parmar",
-      role: "Product Manager",
+      name: "Fajlur Rahman",
+      role: "Co-Founder & CEO",
       image:
         "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
       bio: "Transforming ideas into user-centric digital products.",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/fajlurrahman219/",
         twitter: "#",
       },
     },
@@ -109,8 +109,11 @@ const OurTeam = () => {
       <a
         href={url}
         className="p-2 bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 rounded-lg transition-all duration-200 hover:scale-110"
+
+        target="_blank"
       >
         {icons[platform]}
+        
       </a>
     );
   };
