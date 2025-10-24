@@ -410,10 +410,11 @@ const Footer = () => {
             {/* Logo & Mission */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">TS</span>
+                <div className="px-2 bg-gradient-to-r from-blue-600 to-teal-600 border-2 border-white ">
+                  {/* <h2 className="text-3xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 px-2"> */}
+                  {/* <h2 className="text-2xl py-1 font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600  "> */}
+                  <h2 className="text-white text-2xl">asianarcs</h2>
                 </div>
-                <span className="text-xl font-bold">TechStack Pro</span>
               </div>
 
               <p className="text-slate-300 leading-relaxed max-w-md">
