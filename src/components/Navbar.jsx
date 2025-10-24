@@ -184,7 +184,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="sticky py-1 text-xs top-0 z-50 w-full flex items-center justify-between backdrop-blur-sm transition-colors duration-500
+        className="sticky border-b-2 py-1 text-xs top-0 z-50 w-full flex items-center justify-between backdrop-blur-sm transition-colors duration-500
       "
       >
         
