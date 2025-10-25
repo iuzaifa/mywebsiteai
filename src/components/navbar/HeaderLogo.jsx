@@ -5,7 +5,7 @@ const HeaderLogo = () => {
     <>
       <img
         src="bg/ab.png"
-        className="h-7 w-full pb-0 mb-0"
+        className="lg:h-7 h-5 w-full pb-0 mb-0"
         alt=""
       />
 
