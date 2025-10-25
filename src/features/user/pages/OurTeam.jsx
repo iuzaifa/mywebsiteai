@@ -21,7 +21,7 @@ const OurTeam = () => {
       name: "Fajlur Rahman",
       role: "Co-Founder & CEO",
       image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+        "https://media.licdn.com/dms/image/v2/D4D35AQGICFnaIMfbYw/profile-framedphoto-shrink_400_400/B4DZenb94PHkAc-/0/1750860816198?e=1761930000&v=beta&t=B2HdY0eGgITqAK5Dv-pi-JvdFAd7xl3Z8ZB8_MEdx-E",
       bio: "Transforming ideas into user-centric digital products.",
       social: {
         linkedin: "https://www.linkedin.com/in/fajlurrahman219/",
@@ -132,7 +132,7 @@ const OurTeam = () => {
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             The Minds Behind
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
               {" "}
               Innovation
             </span>
@@ -184,7 +184,7 @@ const OurTeam = () => {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                     </div>
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/20 to-teal-600/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
 
                   {/* Content */}
